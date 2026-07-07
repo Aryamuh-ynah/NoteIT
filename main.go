@@ -2,8 +2,15 @@ package main
 
 import "fmt"
 
-func main() {
+type model struct {
+	msg string
 
-	fmt.Println("Hello, World!")
+}
+
+ 
+
+func main() {
+	m := model{msg: "Hello, World!"}
+	fmt.Println(m.msg)
 	// Your code here
 }
